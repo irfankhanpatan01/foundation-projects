@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    color: #333;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-top: 20px;
+}
+#input{
+    margin: 20px;
+}
+input{
+    padding: 10px;
+    border-radius: 8px;
+    border:  solid 1px #ccc;
+    display: block;
+    margin: 15px;
+    width: 350px;
+}
+#myList{
+    padding: 10px;
+    margin: 0 40px;
+}
+#addBtn,
+#removeBtn{
+    padding: 10px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    background-color: black;
+    color: whitesmoke;
+    width: 220px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
