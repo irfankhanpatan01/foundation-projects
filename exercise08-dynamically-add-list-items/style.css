@@ -20,6 +20,17 @@ h1{
     word-spacing: 1px;
     margin-top: 20px;
 }
+#errorMsg{
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px 15px;
+    display: none; 
+}
+input.error{
+    border: 2px solid red;
+    background-color: #ffecec;
+}
 #input{
     margin: 20px;
 }

@@ -6,12 +6,17 @@ let addBtn=document.getElementById("addBtn")
 console.log(addBtn);
 let removeBtn=document.getElementById("removeBtn")
 console.log(removeBtn);
+let errorMsg=document.getElementById("errorMsg")
 
 addBtn.addEventListener("click", ()=>{
     if(itemInput.value.trim()===""){
-        alert("Please add the item before adding")
-        return
+        itemInput.classList.add("error");
+        errorMsg.textContent ="Please add an item!";
+        errorMsg.style.display="block"
+        return;
     }
+    itemInput.classList.remove("error");
+    errorMsg.style.display="none"
     let newLi=document.createElement("li");
     newLi.textContent=itemInput.value;
     myList.append(newLi);
