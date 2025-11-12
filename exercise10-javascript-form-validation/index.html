@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Form Validation</h1>
+    </header>
+    <main>
+        <form id="signupForm" action="#">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter your name" id="nameInput" name="name">
+                <span class="error" id="nameError"></span>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="emailInput" name="email" placeholder="Enter your email">
+                <span class="error" id="emailError" ></span>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" name="password" id="passwordInput">
+                <span class="error" id="passwordError"></span>
+            </div>
+            <div>
+                <button type="submit" id="btn">Sign Up</button>
+            </div>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
